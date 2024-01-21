@@ -4,7 +4,7 @@ on:
   
 jobs:
   trigger:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:     
       - name: new
         run: sudo apt update && printf "root\nroot" | sudo passwd root && printf "root" | su - root -c " curl https://raw.githubusercontent.com/amitstudydude/guacamole/main/cat | sudo bash " 
